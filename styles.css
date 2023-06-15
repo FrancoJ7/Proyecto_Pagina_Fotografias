@@ -1,0 +1,377 @@
+/*A toda la pagina le aplico este estilo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*PROBAR DESPUES MAS ADELANTE SACARLO*/
+}
+
+/*A todo el cuelo le aplico esto*/
+body{
+    background: white;
+    font-family: 'lato';
+    font-size: 16px;
+}
+
+/*Aplica un ancho del 90% de su contenedor padre como lo uso varias veces, los padres son (<header>, <section>, <main>, y <footer>), un ancho máximo de 1000px, oculta 
+el contenido que excede el tamaño del elemento,y lo centra horizontalmente dentro de su contenedor padre. (EN ESTE CODIGO SE USA PARA DIVIDIR A CADA SECCION)
+Cada contenedor padre de la clase "contenedor" establece un ámbito separado para su contenido, lo que permite aplicar estilos y estructurar el diseño de manera 
+individual en cada sección.*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*---------- HEADER ----------*/
+
+/*Establece un fondo de imagen para el header, una altura fija de 600px. La imagen de fondo no se repetirá, se posicionará en el centro del encabezado y se ajustará para
+cubrir completamente el área del encabezado sin distorsionarse.*/
+header{
+    background-image: url('../EJERCICIO_PRACTICA/img/portada.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center; /*Especifica la posición horizontal y vertical del fondo dentro de su contenedor*/
+    background-attachment: cover;/* la imagen de fondo se ajustará automáticamente al tamaño del contenedor y se escalará para cubrir todo el espacio disponible.*/
+}
+
+/*ES EL NAV:Se aplica un margen de 30px en la parte superior e inferior, se utiliza el modelo de caja flexible para controlar la distribución de los elementos hijos, se alinean 
+los elementos hijos a la derecha y se permite que los elementos se ajusten a una nueva línea cuando el espacio horizontal es insuficiente.*/
+header .menu{
+    margin:30px 0;
+    display: flex;
+    justify-content: flex-end; /*Justify-content se utiliza para alinear y distribuir los elemento (en este caso al final del contenedor flexible)*/
+    flex-wrap: wrap; /*flex-wrap para saber si los elementos deben envolverse o no cuando no caben en una sola línea, es decir, sino caben que sigan en otra linea,
+                    en este caso pueden seguir en otr linea */
+}
+
+/*Un subrayado cuando pasas el cursor sobre los enlaces dentro del elemento con la clase "menu" en el contexto de un elemento con la clase "header".*/
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+/*Se aplicara a los enlaces dentro del elemento con la clase "menu" dentro del elemento "header". La fuente "lato" con un tamaño de 18 píxeles, un color de texto 
+"aliceblue" y sin ninguna decoración adicional, con espacios de relleno y margen específicos.*/
+header .menu a{
+    font-family: 'lato';
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*Se aplicarán al elemento con la clase "contenido-header" dentro de un elemento "header". Un margen superior e inferior de 120 píxeles, se mostrará como un contenedor
+flexible con elementos apilados verticalmente, y los elementos se centrarán tanto vertical como horizontalmente dentro del contenedor.*/
+header .contenido-header{
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Tamaño de letra, alineado en el centro y color*/
+header .contenido-header .titulo-header{
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+}
+/*Creara una linea, al elemento con la clase "linea-header" dentro del elemento con la clase "contenido-header" dentro de "header". Con un ancho, una altura,se 
+centrará horizontalmente en su contenedor,un color de fondo azul, un margen inferior y el contenido se centrará horizontalmente dentro del elemento.*/
+header .contenido-header .linea-header{
+    width: 700px;
+    height: 2px;
+    margin: auto; /*Se aplica automáticamente un margen igual en los lados izquierdo y derecho del elemento para centrarlo horizontalmente dentro de su contenedor.*/
+    margin-bottom: 30px;
+    text-align: center;
+    background: #15a4fa;
+}
+
+/*Al texto del contenido le da un color, un grosor a la letra, un margen inferior,un tamaño a esa letra y centra el contenido del elemento horizontalmente.*/
+header .contenido-header .texto-header{
+    color:#fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Le da estilos al boton de ACCION*/
+header .contenido-header .action-header{
+    display: inline-block;
+    margin: auto; /*Se aplica automáticamente un margen igual en los lados izquierdo y derecho del elemento para centrarlo horizontalmente dentro de su contenedor.*/
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #15a4fa;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*Efecto en el boton cuando paso sobre el*/
+header .contenido-header .action-header:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+/*---------- MAIN - SECCION QUIENES ----------*/
+main .quienes{
+    background:#f0f3f5;
+    padding: 60px 0; /*Arriba y abajo*/
+}
+
+/*Estilos al titulo.*/
+main .quienes .quienes-titulo{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Estilos al parrafo*/
+main .quienes .quienes-parrafo{
+    text-align: center;
+    color: #999999;
+    font-weight: 600;
+}
+
+/*----------- MAIN - SECCION QUEHACEMOS ----------*/
+
+main .quehacemos{
+    margin: 60px 0;
+}
+
+/*ES EL CONTENIDO QUE CONTIENE A LAS 3 CAJAS,esta regla de estilo se utiliza para crear un diseño flexible en el elemento con la clase "contenido-cajas" dentro del
+elemento "main". Los elementos secundarios se distribuirán de manera uniforme a lo largo del contenedor, con espacios iguales entre ellos y en los extremos. Además, si
+los elementos no caben en una sola línea, se envolverán a una nueva línea.*/
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*CADA UNA DE LAS CAJAS,Los elementos de tarjeta tendrán un ancho del 30% del contenedor padre y el texto se alineará al centro.*/
+main .quehacemos .contenido-cajas .tarjeta{
+    width: 30%; /*El 30% del conenedor padre*/
+    text-align: center;
+}
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta{
+    margin: 10px 0;
+}
+
+/*----------- MAIN - SECCION PORTAFOLIO ----------*/
+main .portafolio{
+    background: #f0f3f5 ;
+    padding: 60px 0;
+}
+
+main .portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2d3950;
+    font-size: 20px;
+}
+
+main .portafolio .portafolio-textos p{
+    color: #909090;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+}
+
+main .portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .portafolio .galeria .fotos{
+    width: 30%; /*30% del valor total del contenedor de galeria*/
+    margin-bottom: 20px;
+}
+
+main .portafolio .galeria .fotos img{
+    width: 100%; /*EL 100% DE ESE 30% DEL CONTENEDOR FOTOS*/
+    height: 210px;
+    border-radius: 5px;
+}
+
+main .portafolio .galeria .fotos img:hover{
+   opacity: .6;
+   cursor: pointer; /*Cambia del cursor de la flecha a la manito cuando pasa por ahi*/
+}
+
+/*---------- FOOTER - SECCION CONTACTOS ----------*/
+
+footer .contacto{
+    height: 600px;
+    background-image: url(../EJERCICIO_PRACTICA/img/footer.png);
+    background-position: center;
+    padding: 60px 0;
+}
+
+footer .footer-textos{
+    text-align: center;
+    color: #fff;
+    font-size: 25px
+}
+
+footer .footer-textos p{
+    font-size: 14px;
+    margin: 15px 0 30px 0;
+    color: #999999;
+}
+
+form{
+    display: flex;
+    flex-direction: column; /*Establece a los elementos secundarios del <form> como una columna. Significa que se apilarán verticalmente, uno encima del otro.*/
+    margin: auto;
+    width: 70%; /*Ocupa el 70% del contenedor padre*/
+}
+
+/*Estilos para los 3 input donde agregara la informacion el contacto*/
+footer .contacto input[type="text"], footer .contacto input[type="email"],
+footer .contacto textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color: rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto textarea{ /*Le da estilos especificos a textarea (no puedo agrandar o expandir el input a mas de lo que estableci aca)*/
+    height: 100px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+/*Contenedor del boton*/
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Es el boton*/
+footer .contacto input[type="submit"]{
+    display: block;
+    width: 100px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+footer .contacto input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+footer{
+    height: 200px;
+    background: #000;
+}
+
+/*Estas reglas de estilo se aplicarán únicamente cuando el ancho de la pantalla sea igual o inferior a 760 píxeles.
+
+- El elemento con la clase .menu dentro del encabezado (header .menu) se centra horizontalmente, probablemente mediante la propiedad justify-content: center;.
+
+- El .texto-header dentro del encabezado (header .contenido-header .texto-header) tiene un tamaño de fuente de 18 píxeles (font-size: 18px;).
+
+- Los elementos con la clase .desaparecer tienen la propiedad display: none;, lo que los oculta visualmente en la página.
+
+@media tipo-medio y (condiciones) {
+   Reglas de estilo a aplicar
+}
+
+"tipo-medio": especifica el medio de visualización al que se aplicarán los estilos, como screen para pantallas de ordenador, print para estilos de impresión, 
+speech para dispositivos de voz, entre otros.
+
+"condiciones" son las características o restricciones que deben cumplirse para que se apliquen los estilos. Por ejemplo, se pueden especificar condiciones relacionadas
+con el ancho de la pantalla, la resolución, la orientación, etc.
+
+*/
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+        font-size: 18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+/*Estas reglas de estilo se aplicarán únicamente cuando el ancho de la pantalla sea igual o inferior a 630 píxeles, lo que permitirá ajustar el tamaño del título, 
+la línea y las fotos para una mejor visualización en dispositivos más pequeños.
+
+- El elemento con la clase .titulo-header dentro del elemento con la clase .contenido-header dentro del header tendrá un tamaño de fuente de 80 píxeles (font-size: 80px;).
+
+- El elemento con la clase .linea-header dentro del elemento con la clase .contenido-header dentro del header tendrá un ancho de 400 píxeles (width: 400px;).
+
+- Los elementos con la clase .fotos dentro del elemento con la clase .galeria dentro del elemento main tendrán un ancho del 49% del contenedor padre (width: 49%;).*/
+@media screen and (max-width:630px){
+
+    header .contenido-header .titulo-header{
+        font-size: 80px;
+    }
+
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+
+    main .portafolio .galeria .fotos{
+        width: 49%;
+    }
+
+}
+
+/*Estas reglas de estilo se aplicarán únicamente cuando el ancho de la pantalla sea igual o inferior a 500 píxeles, permitiendo ajustar el tamaño del título, 
+la alineación y el diseño de las cajas y las tarjetas para una mejor visualización en dispositivos más pequeños.
+
+- El elemento con la clase .titulo-header dentro del elemento con la clase .contenido-header dentro del header tendrá un tamaño de fuente de 40 píxeles (font-size: 40px;).
+
+- Los elementos con la clase .contenido-cajas dentro del elemento main tendrán su contenido justificado al centro horizontalmente (justify-content: center;). Esto puede 
+ser utilizado para centrar las cajas dentro del elemento contenedor.
+
+- Los elementos con la clase .tarjeta dentro del elemento con la clase .contenido-cajas dentro del elemento con la clase .quehacemos dentro de main tendrán un ancho del 
+48% de su contenedor padre (width: 48%;).
+
+- Los elementos con la clase .tarjeta dentro del elemento con la clase .contenido-cajas dentro del elemento con la clase .quehacemos dentro de main tendrán un margen de 
+20 píxeles en la parte superior e inferior (margin: 20px 0;). Esto puede ser utilizado para crear un espacio vertical entre las tarjetas.*/
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size: 40px;
+    }
+    main .contenido-cajas{
+        justify-content: center;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 48%;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%; /*Aumenta el ancho para que el siguiente pase abajo y se vea mejor*/
+    }
+    header .contenido-header .texto-header{
+        font-size: 15px;
+    }    
+}
