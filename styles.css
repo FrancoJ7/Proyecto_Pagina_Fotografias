@@ -28,7 +28,7 @@ individual en cada sección.*/
 /*Establece un fondo de imagen para el header, una altura fija de 600px. La imagen de fondo no se repetirá, se posicionará en el centro del encabezado y se ajustará para
 cubrir completamente el área del encabezado sin distorsionarse.*/
 header{
-    background-image: url('../EJERCICIO_PRACTICA/img/portada.png');
+    background-image: url(../Proyecto_Pagina_Fotografias/img/portada.png);
     height: 600px;
     background-repeat: no-repeat;
     background-position: center; /*Especifica la posición horizontal y vertical del fondo dentro de su contenedor*/
@@ -208,7 +208,7 @@ main .portafolio .galeria .fotos img:hover{
 
 footer .contacto{
     height: 600px;
-    background-image: url(../EJERCICIO_PRACTICA/img/footer.png);
+    background-image: url(../Proyecto_Pagina_Fotografias/img/footer.png);
     background-position: center;
     padding: 60px 0;
 }
