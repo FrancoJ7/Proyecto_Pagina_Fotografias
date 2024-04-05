@@ -30,8 +30,4 @@ Este repositorio contiene únicamente archivos HTML y CSS que conforman la estru
 
 Si deseas contribuir al desarrollo de ArgenPhoto, ¡te damos la bienvenida! Siéntete libre de enviar propuestas de mejora, reportar problemas o enviar solicitudes de extracción para colaborar en el desarrollo continuo de este proyecto.
 
-## Contacto
-
-Si tienes alguna pregunta o deseas contactar con el equipo de ArgenPhoto, puedes completar el formulario de contacto disponible en la página web o enviar un correo electrónico a [info@argenphoto.com](mailto:info@argenphoto.com).
-
 ¡Gracias por tu interés en ArgenPhoto! Esperamos poder trabajar contigo para capturar momentos inolvidables.
