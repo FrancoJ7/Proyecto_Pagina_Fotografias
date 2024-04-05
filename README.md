@@ -1,4 +1,4 @@
-ArgenPhoto
+
 Bienvenido al repositorio de ArgenPhoto, un proyecto que ofrece servicios de fotografía con un enfoque moderno y adaptado a las necesidades actuales. Este proyecto consiste en una página web estática desarrollada únicamente con HTML y CSS.
 
 Descripción del Proyecto
