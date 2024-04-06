@@ -34,4 +34,4 @@ Este proyecto está desplegado y disponible para acceder en GitHub Pages.
 
 Si deseas contribuir al desarrollo de ArgenPhoto, ¡te damos la bienvenida! Siéntete libre de enviar propuestas de mejora, reportar problemas o enviar solicitudes de extracción para colaborar en el desarrollo continuo de este proyecto.
 
-¡Gracias por tu interés en ArgenPhoto!
+¡Gracias por tu visitar mi proyecto!
