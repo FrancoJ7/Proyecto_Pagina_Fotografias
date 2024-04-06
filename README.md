@@ -38,6 +38,6 @@ Si deseas contribuir al desarrollo de ArgenPhoto, ¡te damos la bienvenida! Sié
 
 Si tienes alguna pregunta, sugerencia o simplemente quieres comunicarte conmigo, no dudes en contactarme:
 
-- Correo electrónico: [fdjuarez33@gmail.com]
+- Correo electrónico: fdjuarez33@gmail.com
 
 ¡Gracias por visitar mi proyecto!
