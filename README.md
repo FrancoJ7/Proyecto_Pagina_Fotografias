@@ -18,6 +18,10 @@ ArgenPhoto es una plataforma que busca ofrecer servicios de fotografía eficaces
 
 Este repositorio contiene únicamente archivos HTML y CSS que conforman la estructura y el diseño de la página web de ArgenPhoto. Los desarrolladores pueden clonar este repositorio para revisar el código fuente, realizar modificaciones según sea necesario y desplegar la página en un servidor web.
 
+## Implementación en GitHub Pages
+
+Este proyecto está desplegado y disponible para acceder en GitHub Pages. 
+
 ### Estructura del Repositorio
 
 - **index.html:** Este archivo contiene el código HTML que define la estructura de la página web, incluyendo el encabezado, el contenido principal y el pie de página.
